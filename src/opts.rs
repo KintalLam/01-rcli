@@ -1,5 +1,4 @@
 use std::path::Path;
-
 use clap::Parser;
 
 #[derive(Debug, Parser)]
@@ -7,6 +6,7 @@ use clap::Parser;
 pub struct Opts {
     #[command(subcommand)]
     pub cmd: Subcommand,
+
 }
 
 #[derive(Debug, Parser)]
